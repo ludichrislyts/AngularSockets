@@ -16,7 +16,8 @@ io.sockets.on('connection', function (socket) {
     console.log('Someone connected');
     
     socket.on('echo', function (data) {
-        _socket.emit('echo', data);
+        //_socket.emit('echo', data);
+        io.emit('echo', data);
     });
  
     socket.on('echo-ack', function (data, callback) {

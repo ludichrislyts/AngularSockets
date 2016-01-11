@@ -28,7 +28,7 @@
                 $socket.emit('echo-ack', $scope.dataToSend, function (data) {
                     //se nao tivesse sido feito $apply
                     //a variavel $scope não seria reconhecida
-                    $scope.serverResponseACK = data;
+                    //$scope.serverResponseACK = data;
                 });
                 $scope.dataToSend = '';
             };
